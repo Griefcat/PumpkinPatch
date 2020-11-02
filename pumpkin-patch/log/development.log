@@ -1735,3 +1735,1187 @@ Processing by PumpkinsController#index as HTML
 Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.6ms | Allocations: 6767)
 
 
+Started GET "/" for ::1 at 2020-11-02 16:20:02 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 4342)
+
+
+Started GET "/about" for ::1 at 2020-11-02 16:20:04 -0500
+Processing by ApplicationController#about as HTML
+  Rendering application/about.html.erb within layouts/application
+  Rendered application/about.html.erb within layouts/application (Duration: 3.6ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 4178)
+
+
+Started GET "/" for ::1 at 2020-11-02 16:20:05 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 3943)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 16:20:09 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (1.1ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2516)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 1.1ms | Allocations: 6496)
+
+
+Started GET "/pumpkins/123" for ::1 at 2020-11-02 16:20:13 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mPumpkin Load (0.4ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 55)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.4ms | Allocations: 4576)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-11-02 16:21:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/annenardolilli/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/annenardolilli/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [38 times] (Duration: 13.6ms | Allocations: 5323)
+  Rendered /Users/annenardolilli/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 6.1ms | Allocations: 703)
+  Rendered /Users/annenardolilli/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 27.2ms | Allocations: 9228)
+Completed 200 OK in 44ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 12034)
+
+
+Started GET "/pumpkins/78/edit" for ::1 at 2020-11-02 16:28:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#edit as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:20:in `edit'
+  Rendering pumpkins/edit.html.erb within layouts/application
+  Rendered pumpkins/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 665)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 13.3ms | ActiveRecord: 3.3ms | Allocations: 9350)
+
+
+Started GET "/pumpkins/78/edit" for ::1 at 2020-11-02 16:30:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#edit as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:20:in `edit'
+  Rendering pumpkins/edit.html.erb within layouts/application
+  Rendered pumpkins/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 22.1ms | ActiveRecord: 2.0ms | Allocations: 9454)
+
+
+Started PATCH "/pumpkins/78" for ::1 at 2020-11-02 16:31:10 -0500
+Processing by PumpkinsController#update as HTML
+  Parameters: {"authenticity_token"=>"Gkf/f8wj5xWw53jwsdUh8C3EoUqzTHjmTnLG9acFIMHkh6b7tybgCOWxMySTXCUYRtx8hqKxAOqkbL2aTMJ0kQ==", "pumpkin"=>{"species"=>"Virgil"}, "commit"=>"Update Pumpkin", "id"=>"78"}
+No template found for PumpkinsController#update, rendering head :no_content
+Completed 204 No Content in 40ms (ActiveRecord: 0.0ms | Allocations: 1718)
+
+
+Started GET "/pumpkins/78/edit" for ::1 at 2020-11-02 16:32:59 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#edit as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:20:in `edit'
+  Rendering pumpkins/edit.html.erb within layouts/application
+  Rendered pumpkins/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 782)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 40.3ms | ActiveRecord: 1.5ms | Allocations: 9444)
+
+
+Started PATCH "/pumpkins/78" for ::1 at 2020-11-02 16:33:13 -0500
+Processing by PumpkinsController#update as HTML
+  Parameters: {"authenticity_token"=>"zO0Sy/EpdFJuNFsvZiIzYkRpHRmzZEIBal9fWaRiBi4yLUtPiixzTztiEPtEqzeKL3HA1aKZOg2AQSQ2T6VSfg==", "pumpkin"=>{"species"=>"Boba Tea"}, "commit"=>"Update Pumpkin", "id"=>"78"}
+  [1m[36mPumpkin Load (0.7ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (5.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.229240"], ["id", 73]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (2.7ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.252618"], ["id", 74]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.265649"], ["id", 75]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.278124"], ["id", 76]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.290085"], ["id", 77]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.297788"], ["id", 78]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.304820"], ["id", 79]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.8ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.312227"], ["id", 80]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.1ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.324117"], ["id", 81]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.0ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.340735"], ["id", 82]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (3.1ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.350270"], ["id", 83]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.361409"], ["id", 84]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.372635"], ["id", 85]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.378609"], ["id", 86]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.398889"], ["id", 87]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (10.0ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.459163"], ["id", 88]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.502589"], ["id", 89]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.9ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.525676"], ["id", 90]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (2.1ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.543721"], ["id", 91]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.560962"], ["id", 92]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.575711"], ["id", 93]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.584868"], ["id", 94]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.600830"], ["id", 95]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.618889"], ["id", 96]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.0ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.645751"], ["id", 97]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.2ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.710415"], ["id", 98]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.7ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.761945"], ["id", 99]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.779098"], ["id", 100]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.791360"], ["id", 101]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.806894"], ["id", 102]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.860329"], ["id", 103]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.879331"], ["id", 104]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.889936"], ["id", 105]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.9ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.899545"], ["id", 106]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (44.9ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.915985"], ["id", 107]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.975795"], ["id", 108]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (2.3ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:13.987710"], ["id", 109]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.030113"], ["id", 110]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.046879"], ["id", 111]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.075686"], ["id", 112]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.130901"], ["id", 113]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.3ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.162995"], ["id", 114]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.187132"], ["id", 115]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.197548"], ["id", 116]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.3ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.262579"], ["id", 117]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.6ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.279515"], ["id", 118]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.296550"], ["id", 119]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (2.9ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.304945"], ["id", 120]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (0.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.350845"], ["id", 121]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.4ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.374720"], ["id", 122]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[36mPumpkin Update (1.5ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:33:14.405282"], ["id", 123]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+Redirected to http://localhost:3000/pumpkins/73%2F74%2F75%2F76%2F77%2F78%2F79%2F80%2F81%2F82%2F83%2F84%2F85%2F86%2F87%2F88%2F89%2F90%2F91%2F92%2F93%2F94%2F95%2F96%2F97%2F98%2F99%2F100%2F101%2F102%2F103%2F104%2F105%2F106%2F107%2F108%2F109%2F110%2F111%2F112%2F113%2F114%2F115%2F116%2F117%2F118%2F119%2F120%2F121%2F122%2F123
+Completed 302 Found in 1205ms (ActiveRecord: 273.0ms | Allocations: 287227)
+
+
+Started GET "/pumpkins/73%2F74%2F75%2F76%2F77%2F78%2F79%2F80%2F81%2F82%2F83%2F84%2F85%2F86%2F87%2F88%2F89%2F90%2F91%2F92%2F93%2F94%2F95%2F96%2F97%2F98%2F99%2F100%2F101%2F102%2F103%2F104%2F105%2F106%2F107%2F108%2F109%2F110%2F111%2F112%2F113%2F114%2F115%2F116%2F117%2F118%2F119%2F120%2F121%2F122%2F123" for ::1 at 2020-11-02 16:33:14 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88/89/90/91/92/93/94/95/96/97/98/99/100/101/102/103/104/105/106/107/108/109/110/111/112/113/114/115/116/117/118/119/120/121/122/123"}
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 3043)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 9632)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 16:33:17 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (2.1ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2640)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 23.3ms | ActiveRecord: 2.1ms | Allocations: 6760)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 16:38:42 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.3ms | Allocations: 9468)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (1.1ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 73]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 74]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 75]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 76]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 77]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 78]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 79]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 80]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 81]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 82]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 83]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 84]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (1.1ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 85]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 86]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 87]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 88]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (1.0ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 89]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 90]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 91]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 92]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 93]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 94]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 95]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 96]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 97]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 98]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 99]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 100]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 101]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 102]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (1.0ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 103]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 104]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 105]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 106]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 107]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 108]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 109]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 110]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 111]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 112]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 113]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 114]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 115]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 116]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (2.0ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 117]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 118]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 119]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 120]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 121]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 122]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pumpkins" WHERE "pumpkins"."id" = ?[0m  [["id", 123]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPumpkinFarm Load (0.3ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farms" WHERE "pumpkin_farms"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Destroy (1.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farms" WHERE "pumpkin_farms"."id" = ?[0m  [["id", 10]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farms" WHERE "pumpkin_farms"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farms" WHERE "pumpkin_farms"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farms" WHERE "pumpkin_farms"."id" = ?[0m  [["id", 13]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPumpkinFarmPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkin_farm_pumpkins".* FROM "pumpkin_farm_pumpkins"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (1.2ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 8]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 9]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (13.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 10]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (1.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 12]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 13]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 15]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (4.0ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 16]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 17]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 18]]
+  [1m[35m (45.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 19]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 20]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (1.2ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 21]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (1.0ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 23]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 24]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (3.2ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 25]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 26]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 27]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 28]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 29]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 30]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 31]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 32]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (3.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 33]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (2.9ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 34]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (1.8ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 35]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 36]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 37]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 38]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 39]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 40]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (3.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 41]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 42]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 43]]
+  [1m[35m (39.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 44]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.7ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 45]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (2.8ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 46]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 47]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 48]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 49]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pumpkin_farm_pumpkins" WHERE "pumpkin_farm_pumpkins"."id" = ?[0m  [["id", 50]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jake's Unisex Hairplace"], ["created_at", "2020-11-02 21:39:29.032689"], ["updated_at", "2020-11-02 21:39:29.032689"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Anaxagoras"], ["created_at", "2020-11-02 21:39:29.044134"], ["updated_at", "2020-11-02 21:39:29.044134"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 124], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.062961"], ["updated_at", "2020-11-02 21:39:29.062961"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Diogenes"], ["created_at", "2020-11-02 21:39:29.076516"], ["updated_at", "2020-11-02 21:39:29.076516"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 125], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.093035"], ["updated_at", "2020-11-02 21:39:29.093035"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Plutarch"], ["created_at", "2020-11-02 21:39:29.107717"], ["updated_at", "2020-11-02 21:39:29.107717"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 126], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.114581"], ["updated_at", "2020-11-02 21:39:29.114581"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Galen"], ["created_at", "2020-11-02 21:39:29.146558"], ["updated_at", "2020-11-02 21:39:29.146558"]]
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 127], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.182207"], ["updated_at", "2020-11-02 21:39:29.182207"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Parmenides"], ["created_at", "2020-11-02 21:39:29.192219"], ["updated_at", "2020-11-02 21:39:29.192219"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 128], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.203845"], ["updated_at", "2020-11-02 21:39:29.203845"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Hippocrates"], ["created_at", "2020-11-02 21:39:29.215543"], ["updated_at", "2020-11-02 21:39:29.215543"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 129], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.229284"], ["updated_at", "2020-11-02 21:39:29.229284"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Pythagoras"], ["created_at", "2020-11-02 21:39:29.240448"], ["updated_at", "2020-11-02 21:39:29.240448"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (22.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 130], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.246969"], ["updated_at", "2020-11-02 21:39:29.246969"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Diogenes"], ["created_at", "2020-11-02 21:39:29.283004"], ["updated_at", "2020-11-02 21:39:29.283004"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 131], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.305304"], ["updated_at", "2020-11-02 21:39:29.305304"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Solon"], ["created_at", "2020-11-02 21:39:29.313263"], ["updated_at", "2020-11-02 21:39:29.313263"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 132], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.323464"], ["updated_at", "2020-11-02 21:39:29.323464"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (4.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Aristotle"], ["created_at", "2020-11-02 21:39:29.330712"], ["updated_at", "2020-11-02 21:39:29.330712"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (1.5ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 133], ["pumpkinfarm_id", 14], ["created_at", "2020-11-02 21:39:29.349519"], ["updated_at", "2020-11-02 21:39:29.349519"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Springfield Retirement Castle"], ["created_at", "2020-11-02 21:39:29.390395"], ["updated_at", "2020-11-02 21:39:29.390395"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Diogenes"], ["created_at", "2020-11-02 21:39:29.396801"], ["updated_at", "2020-11-02 21:39:29.396801"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (2.2ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 134], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.409112"], ["updated_at", "2020-11-02 21:39:29.409112"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.3ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Plato"], ["created_at", "2020-11-02 21:39:29.447346"], ["updated_at", "2020-11-02 21:39:29.447346"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (7.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 135], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.507178"], ["updated_at", "2020-11-02 21:39:29.507178"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.0ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Epicurus"], ["created_at", "2020-11-02 21:39:29.531446"], ["updated_at", "2020-11-02 21:39:29.531446"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 136], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.543175"], ["updated_at", "2020-11-02 21:39:29.543175"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Democritus"], ["created_at", "2020-11-02 21:39:29.554160"], ["updated_at", "2020-11-02 21:39:29.554160"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 137], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.564026"], ["updated_at", "2020-11-02 21:39:29.564026"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Proclus"], ["created_at", "2020-11-02 21:39:29.575390"], ["updated_at", "2020-11-02 21:39:29.575390"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.9ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 138], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.583457"], ["updated_at", "2020-11-02 21:39:29.583457"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Plutarch"], ["created_at", "2020-11-02 21:39:29.594124"], ["updated_at", "2020-11-02 21:39:29.594124"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 139], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.603120"], ["updated_at", "2020-11-02 21:39:29.603120"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Gorgias"], ["created_at", "2020-11-02 21:39:29.630884"], ["updated_at", "2020-11-02 21:39:29.630884"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.9ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 140], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.728777"], ["updated_at", "2020-11-02 21:39:29.728777"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Proclus"], ["created_at", "2020-11-02 21:39:29.749223"], ["updated_at", "2020-11-02 21:39:29.749223"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 141], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.769995"], ["updated_at", "2020-11-02 21:39:29.769995"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Zeno of Elea"], ["created_at", "2020-11-02 21:39:29.790647"], ["updated_at", "2020-11-02 21:39:29.790647"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.9ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 142], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.828886"], ["updated_at", "2020-11-02 21:39:29.828886"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Posidonius"], ["created_at", "2020-11-02 21:39:29.883538"], ["updated_at", "2020-11-02 21:39:29.883538"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 143], ["pumpkinfarm_id", 15], ["created_at", "2020-11-02 21:39:29.896880"], ["updated_at", "2020-11-02 21:39:29.896880"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Create (2.1ms)[0m  [1m[32mINSERT INTO "pumpkin_farms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ogdenville"], ["created_at", "2020-11-02 21:39:29.905610"], ["updated_at", "2020-11-02 21:39:29.905610"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Gorgias"], ["created_at", "2020-11-02 21:39:29.926111"], ["updated_at", "2020-11-02 21:39:29.926111"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 144], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:29.939894"], ["updated_at", "2020-11-02 21:39:29.939894"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Antisthenes"], ["created_at", "2020-11-02 21:39:29.947418"], ["updated_at", "2020-11-02 21:39:29.947418"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 145], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:29.960430"], ["updated_at", "2020-11-02 21:39:29.960430"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Galen"], ["created_at", "2020-11-02 21:39:29.973759"], ["updated_at", "2020-11-02 21:39:29.973759"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 146], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:29.980946"], ["updated_at", "2020-11-02 21:39:29.980946"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Plutarch"], ["created_at", "2020-11-02 21:39:29.990028"], ["updated_at", "2020-11-02 21:39:29.990028"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 147], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.042764"], ["updated_at", "2020-11-02 21:39:30.042764"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Diogenes"], ["created_at", "2020-11-02 21:39:30.071615"], ["updated_at", "2020-11-02 21:39:30.071615"]]
+  [1m[35m (27.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 148], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.282570"], ["updated_at", "2020-11-02 21:39:30.282570"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Parmenides"], ["created_at", "2020-11-02 21:39:30.302907"], ["updated_at", "2020-11-02 21:39:30.302907"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 149], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.312590"], ["updated_at", "2020-11-02 21:39:30.312590"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.3ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Archimedes"], ["created_at", "2020-11-02 21:39:30.324095"], ["updated_at", "2020-11-02 21:39:30.324095"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (1.2ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 150], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.339358"], ["updated_at", "2020-11-02 21:39:30.339358"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Parmenides"], ["created_at", "2020-11-02 21:39:30.364157"], ["updated_at", "2020-11-02 21:39:30.364157"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 151], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.374793"], ["updated_at", "2020-11-02 21:39:30.374793"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Thucydides"], ["created_at", "2020-11-02 21:39:30.397361"], ["updated_at", "2020-11-02 21:39:30.397361"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 152], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.465768"], ["updated_at", "2020-11-02 21:39:30.465768"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Solon"], ["created_at", "2020-11-02 21:39:30.533181"], ["updated_at", "2020-11-02 21:39:30.533181"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (2.0ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 153], ["pumpkinfarm_id", 16], ["created_at", "2020-11-02 21:39:30.555110"], ["updated_at", "2020-11-02 21:39:30.555110"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkin_farms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Springfield City Hall"], ["created_at", "2020-11-02 21:39:30.568869"], ["updated_at", "2020-11-02 21:39:30.568869"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Heraclitus"], ["created_at", "2020-11-02 21:39:30.579912"], ["updated_at", "2020-11-02 21:39:30.579912"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 154], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.603130"], ["updated_at", "2020-11-02 21:39:30.603130"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Archimedes"], ["created_at", "2020-11-02 21:39:30.616586"], ["updated_at", "2020-11-02 21:39:30.616586"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 155], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.630905"], ["updated_at", "2020-11-02 21:39:30.630905"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Heraclitus"], ["created_at", "2020-11-02 21:39:30.647685"], ["updated_at", "2020-11-02 21:39:30.647685"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 156], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.666175"], ["updated_at", "2020-11-02 21:39:30.666175"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (2.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Zeno of Elea"], ["created_at", "2020-11-02 21:39:30.701068"], ["updated_at", "2020-11-02 21:39:30.701068"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 157], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.720122"], ["updated_at", "2020-11-02 21:39:30.720122"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Chrysippus"], ["created_at", "2020-11-02 21:39:30.736346"], ["updated_at", "2020-11-02 21:39:30.736346"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 158], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.748605"], ["updated_at", "2020-11-02 21:39:30.748605"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Thucydides"], ["created_at", "2020-11-02 21:39:30.775794"], ["updated_at", "2020-11-02 21:39:30.775794"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (1.0ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 159], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.810419"], ["updated_at", "2020-11-02 21:39:30.810419"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Zeno of Elea"], ["created_at", "2020-11-02 21:39:30.870015"], ["updated_at", "2020-11-02 21:39:30.870015"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (3.1ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 160], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.884391"], ["updated_at", "2020-11-02 21:39:30.884391"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Solon"], ["created_at", "2020-11-02 21:39:30.902514"], ["updated_at", "2020-11-02 21:39:30.902514"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 161], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:30.916162"], ["updated_at", "2020-11-02 21:39:30.916162"]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Arcesilaus"], ["created_at", "2020-11-02 21:39:30.987633"], ["updated_at", "2020-11-02 21:39:30.987633"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 162], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:31.018596"], ["updated_at", "2020-11-02 21:39:31.018596"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Zeno of Elea"], ["created_at", "2020-11-02 21:39:31.037046"], ["updated_at", "2020-11-02 21:39:31.037046"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 163], ["pumpkinfarm_id", 17], ["created_at", "2020-11-02 21:39:31.067457"], ["updated_at", "2020-11-02 21:39:31.067457"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarm Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Frying Dutchman"], ["created_at", "2020-11-02 21:39:31.085816"], ["updated_at", "2020-11-02 21:39:31.085816"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Democritus"], ["created_at", "2020-11-02 21:39:31.113545"], ["updated_at", "2020-11-02 21:39:31.113545"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.8ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 164], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.133598"], ["updated_at", "2020-11-02 21:39:31.133598"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Arcesilaus"], ["created_at", "2020-11-02 21:39:31.147544"], ["updated_at", "2020-11-02 21:39:31.147544"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (15.3ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 165], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.163096"], ["updated_at", "2020-11-02 21:39:31.163096"]]
+  [1m[35m (39.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.9ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Democritus"], ["created_at", "2020-11-02 21:39:31.243341"], ["updated_at", "2020-11-02 21:39:31.243341"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.4ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 166], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.297224"], ["updated_at", "2020-11-02 21:39:31.297224"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Chrysippus"], ["created_at", "2020-11-02 21:39:31.322256"], ["updated_at", "2020-11-02 21:39:31.322256"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 167], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.332448"], ["updated_at", "2020-11-02 21:39:31.332448"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.3ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Parmenides"], ["created_at", "2020-11-02 21:39:31.352305"], ["updated_at", "2020-11-02 21:39:31.352305"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 168], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.378453"], ["updated_at", "2020-11-02 21:39:31.378453"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Archimedes"], ["created_at", "2020-11-02 21:39:31.400420"], ["updated_at", "2020-11-02 21:39:31.400420"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 169], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.415264"], ["updated_at", "2020-11-02 21:39:31.415264"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Gorgias"], ["created_at", "2020-11-02 21:39:31.445997"], ["updated_at", "2020-11-02 21:39:31.445997"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 170], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.463374"], ["updated_at", "2020-11-02 21:39:31.463374"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Posidonius"], ["created_at", "2020-11-02 21:39:31.481305"], ["updated_at", "2020-11-02 21:39:31.481305"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (3.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (5.3ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 171], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.512574"], ["updated_at", "2020-11-02 21:39:31.512574"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (0.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Pythagoras"], ["created_at", "2020-11-02 21:39:31.543619"], ["updated_at", "2020-11-02 21:39:31.543619"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (2.1ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 172], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.571964"], ["updated_at", "2020-11-02 21:39:31.571964"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkin Create (1.1ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Zeno of Elea"], ["created_at", "2020-11-02 21:39:31.585945"], ["updated_at", "2020-11-02 21:39:31.585945"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPumpkinFarmPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkinfarm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 173], ["pumpkinfarm_id", 18], ["created_at", "2020-11-02 21:39:31.620052"], ["updated_at", "2020-11-02 21:39:31.620052"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/pumpkins" for ::1 at 2020-11-02 16:39:39 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (0.5ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 2458)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.5ms | Allocations: 6434)
+
+
+Started GET "/pumpkins/100/edit" for ::1 at 2020-11-02 16:39:51 -0500
+Processing by PumpkinsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mPumpkin Load (0.5ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:20:in `edit'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms | Allocations: 1281)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pumpkin with 'id'=100):
+  
+app/controllers/pumpkins_controller.rb:20:in `edit'
+Started GET "/pumpkins/126" for ::1 at 2020-11-02 16:40:10 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"126"}
+  [1m[36mPumpkin Load (0.8ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 55)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.8ms | Allocations: 4559)
+
+
+Started GET "/pumpkins/126/edit" for ::1 at 2020-11-02 16:40:15 -0500
+Processing by PumpkinsController#edit as HTML
+  Parameters: {"id"=>"126"}
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:20:in `edit'
+  Rendering pumpkins/edit.html.erb within layouts/application
+  Rendered pumpkins/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.2ms | Allocations: 5108)
+
+
+Started PATCH "/pumpkins/126" for ::1 at 2020-11-02 16:40:38 -0500
+Processing by PumpkinsController#update as HTML
+  Parameters: {"authenticity_token"=>"Umb6U3ap4cx4oBs0ymJ+37ZPJ+VJ5jYAkjoGvaTyDcqspqPXDazm0S32UODo63o33Vf6KVgbTgx4JH3STzVZmg==", "pumpkin"=>{"species"=>"Boba Tea"}, "commit"=>"Update Pumpkin", "id"=>"126"}
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:25:in `update'
+  [1m[36mPumpkin Update (0.7ms)[0m  [1m[33mUPDATE "pumpkins" SET "species" = ?, "updated_at" = ? WHERE "pumpkins"."id" = ?[0m  [["species", "Boba Tea"], ["updated_at", "2020-11-02 21:40:38.978918"], ["id", 126]]
+  ↳ app/controllers/pumpkins_controller.rb:25:in `update'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:25:in `update'
+Redirected to http://localhost:3000/pumpkins/126
+Completed 302 Found in 24ms (ActiveRecord: 3.7ms | Allocations: 3290)
+
+
+Started GET "/pumpkins/126" for ::1 at 2020-11-02 16:40:39 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"126"}
+  [1m[36mPumpkin Load (0.4ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 0.4ms | Allocations: 4558)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 16:40:41 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (0.5ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2458)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.5ms | Allocations: 6426)
+
+
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 16:43:33 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 4723)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" ORDER BY "pumpkin_farms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPumpkinFarm Load (0.3ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" ORDER BY "pumpkin_farms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPumpkin Load (1.4ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkins"."id" = "pumpkin_farm_pumpkins"."pumpkin_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_farm_id" = ? LIMIT ?[0m  [["pumpkin_farm_id", 14], ["LIMIT", 11]]
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" ORDER BY "pumpkin_farms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPumpkin Load (0.8ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkins"."id" = "pumpkin_farm_pumpkins"."pumpkin_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_farm_id" = ? LIMIT ?[0m  [["pumpkin_farm_id", 14], ["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" ORDER BY "pumpkin_farms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPumpkin Load (1.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkins"."id" = "pumpkin_farm_pumpkins"."pumpkin_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_farm_id" = ? LIMIT ?[0m  [["pumpkin_farm_id", 14], ["LIMIT", 11]]

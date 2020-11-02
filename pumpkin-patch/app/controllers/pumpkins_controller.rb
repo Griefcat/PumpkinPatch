@@ -17,7 +17,14 @@ class PumpkinsController < ApplicationController
   end 
 
   def edit
+    @pumpkin = Pumpkin.find(params[:id])
   end
+
+  def update
+    @pumpkin = Pumpkin.find(params[:id])
+    @pumpkin.update(pumpkin_params)
+    redirect_to pumpkin_path(@pumpkin)
+  end 
 
   private
   def pumpkin_params

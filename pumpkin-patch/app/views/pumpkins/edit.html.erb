@@ -1,2 +1,8 @@
-<h1>Pumpkins#edit</h1>
-<p>Find me in app/views/pumpkins/edit.html.erb</p>
+<h1>Edit this Greek Pumpkin</h1>
+<p>Guess you don't like the Greeks, huh? Tsk tsk</p>
+
+<%=form_for @pumpkin do |f|%>
+<%=f.label :species %>
+<%=f.text_field :species %>
+<%=f.submit%>
+<%end%>
