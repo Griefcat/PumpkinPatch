@@ -1,0 +1,9 @@
+<h1>Our Pumpkins come from Greece!</h1>
+<p>Click on a Pumpkin to learn more</p>
+
+<ul>
+<% @pumpkins.each do |pumpkin|%>
+<li><%= link_to pumpkin.species, pumpkin_path(pumpkin.id) %></li>
+<%end%>
+</ul>
+

@@ -1,0 +1,12 @@
+<h1>Make a new pumpkin</h1>
+<p>(gotta be named something greek though)</p>
+
+
+<%=form_for @pumpkin do |f| %>
+<%=f.label :species %>
+<%=f.text_field :species %>
+
+<%=f.submit "Submit Your Greek Pumpkin"%>
+<%end%>
+<br>
+<%=link_to "Go back to Pumpkin List", pumpkins_path%>

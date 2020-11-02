@@ -1,0 +1,2 @@
+class PumpkinFarm < ApplicationRecord
+end
