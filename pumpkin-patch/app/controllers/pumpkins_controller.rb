@@ -28,6 +28,6 @@ class PumpkinsController < ApplicationController
 
   private
   def pumpkin_params
-    params.require(:pumpkin).permit(:species)
+    params.require(:pumpkin).permit(:species, :pumpkin_farm_ids => [])
   end 
 end

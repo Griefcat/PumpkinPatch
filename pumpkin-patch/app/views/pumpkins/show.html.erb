@@ -2,6 +2,15 @@
 
 <%=image_tag "https://target.scene7.com/is/image/Target/GUEST_0dbd9a95-857d-44dd-b903-9df6b568cb92?fmt=webp&amp;wid=1400&amp;qlt=80" %><br>
 
-<%=@pumpkin.species%>
+<div>Species:<%=@pumpkin.species%></div>
+
+<div>
+    Availabe at:<% @pumpkin.pumpkin_farms.each do |farm| %>
+    <ul>
+        <li><%= farm.name %></li>
+    </ul>
+    <% end %>
+</div>
+
 
 <div><%=link_to "Back to Index", pumpkins_path%></div>

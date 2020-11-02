@@ -5,6 +5,8 @@
 <%=form_for @pumpkin do |f| %>
 <%=f.label :species %>
 <%=f.text_field :species %>
+<%=f.label :pumpkin_farm %>
+<%=f.collection_check_boxes :pumpkin_farm_ids, PumpkinFarm.all, :id, :name %>
 
 <%=f.submit "Submit Your Greek Pumpkin"%>
 <%end%>

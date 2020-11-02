@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_02_174958) do
+ActiveRecord::Schema.define(version: 2020_11_02_225034) do
 
   create_table "pumpkin_farm_pumpkins", force: :cascade do |t|
     t.integer "pumpkin_id"
-    t.integer "pumpkinfarm_id"
+    t.integer "pumpkin_farm_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

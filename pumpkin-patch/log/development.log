@@ -2919,3 +2919,839 @@ Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 472
   [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" ORDER BY "pumpkin_farms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mPumpkin Load (1.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkins"."id" = "pumpkin_farm_pumpkins"."pumpkin_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_farm_id" = ? LIMIT ?[0m  [["pumpkin_farm_id", 14], ["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-11-02 17:12:08 -0500
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 12.7ms | Allocations: 445)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 428ms (Views: 395.8ms | ActiveRecord: 0.0ms | Allocations: 23057)
+
+
+Started GET "/about" for ::1 at 2020-11-02 17:12:11 -0500
+Processing by ApplicationController#about as HTML
+  Rendering application/about.html.erb within layouts/application
+  Rendered application/about.html.erb within layouts/application (Duration: 1.6ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 4267)
+
+
+Started GET "/" for ::1 at 2020-11-02 17:12:12 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.0ms | Allocations: 4030)
+
+
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:12:18 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 3341.4ms | Allocations: 885380)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3388ms (Views: 3356.1ms | ActiveRecord: 1.3ms | Allocations: 895058)
+
+
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:15:54 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 608.9ms | Allocations: 79550)
+Completed 500 Internal Server Error in 624ms (ActiveRecord: 0.0ms | Allocations: 80851)
+
+
+  
+ActionView::Template::Error (undefined method `collection_check_box' for #<ActionView::Helpers::FormBuilder:0x00007fa65c0c3af0>
+Did you mean?  collection_check_boxes):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_box :pumpkin_farm, PumpkinFarm.all, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:16:24 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 391.8ms | Allocations: 75496)
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 0.0ms | Allocations: 76820)
+
+
+  
+ActionView::Template::Error (undefined method `collection_check_box' for #<ActionView::Helpers::FormBuilder:0x00007fa651cb7c90>
+Did you mean?  collection_check_boxes):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_box :pumpkin_farm, :pumpkinfarm_id, PumpkinFarm.all, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:16:43 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 46.2ms | Allocations: 4791)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms | Allocations: 6089)
+
+
+  
+ActionView::Template::Error (undefined method `map' for :pumpkinfarm_id:Symbol
+Did you mean?  tap):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farm, :pumpkinfarm_id, PumpkinFarm.all, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:16:58 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1536)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2832)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 4..6)):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farm, PumpkinFarm.all, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:25:11 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (1.0ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 51.7ms | Allocations: 8264)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 2.7ms | Allocations: 13428)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_id' for #<Pumpkin:0x00007fa657119400>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:25:32 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 28.9ms | Allocations: 3911)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms | Allocations: 5201)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkin_farm_id' for #<Pumpkin:0x00007fa655e7be38>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:25:35 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3656)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 4209)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkin_farm_id' for #<Pumpkin:0x00007fa65127c370>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:25:46 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (4.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 83.2ms | Allocations: 7491)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 7.6ms | Allocations: 12319)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkin_farm_id' for #<Pumpkin:0x00007fa6560fb7a8>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:26:03 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.7ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 37.6ms | Allocations: 7751)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 2.9ms | Allocations: 13164)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_id' for #<Pumpkin:0x00007fa651dac100>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:26:22 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (1.0ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 44.2ms | Allocations: 7489)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 4.6ms | Allocations: 12316)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_id' for #<Pumpkin:0x00007fa6524a5830>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:30:49 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.7ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 42.0ms | Allocations: 7704)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 3.7ms | Allocations: 13117)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm' for #<Pumpkin:0x00007fa651b8af48>
+Did you mean?  pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:31:21 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.4ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 97.2ms | Allocations: 10791)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.4ms | Allocations: 12081)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) "pumpkin_farm" or :pumpkin_farms in model PumpkinFarmPumpkin. Try 'has_many :pumpkin_farms, :through => :pumpkin_farm_pumpkins, :source => <name>'. Is it one of pumpkin or pumpkinfarm?):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farms, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:32:06 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.4ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 23.9ms | Allocations: 3906)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.4ms | Allocations: 5196)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_id' for #<Pumpkin:0x00007fa655769be0>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:34:24 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 21.4ms | Allocations: 3656)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms | Allocations: 4209)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_id' for #<Pumpkin:0x00007fa651b66fa8>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/" for ::1 at 2020-11-02 17:34:33 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (0.9ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.9ms | Allocations: 7059)
+
+
+Started GET "/pumpkins/138" for ::1 at 2020-11-02 17:34:36 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"138"}
+  [1m[36mPumpkin Load (1.0ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 33.4ms | ActiveRecord: 1.0ms | Allocations: 7990)
+
+
+Started GET "/pumpkins/138" for ::1 at 2020-11-02 17:36:20 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"138"}
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 19.6ms | Allocations: 2642)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms | Allocations: 4459)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkin_farm' for #<Pumpkin:0x00007fa651d15e58>
+Did you mean?  pumpkin_farms
+               pumpkin_farms=):
+    4: 
+    5: <div>Species:<%=@pumpkin.species%></div>
+    6: 
+    7: <div>Availabe at:<%= @pumpkin.pumpkin_farm %></div>
+    8: 
+    9: 
+   10: <div><%=link_to "Back to Index", pumpkins_path%></div>
+  
+app/views/pumpkins/show.html.erb:7
+Started GET "/pumpkins/138" for ::1 at 2020-11-02 17:36:37 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"138"}
+  [1m[36mPumpkin Load (0.4ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1157)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms | Allocations: 2974)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) "pumpkin_farm" or :pumpkin_farms in model PumpkinFarmPumpkin. Try 'has_many :pumpkin_farms, :through => :pumpkin_farm_pumpkins, :source => <name>'. Is it one of pumpkin or pumpkinfarm?):
+    4: 
+    5: <div>Species:<%=@pumpkin.species%></div>
+    6: 
+    7: <div>Availabe at:<%= @pumpkin.pumpkin_farms %></div>
+    8: 
+    9: 
+   10: <div><%=link_to "Back to Index", pumpkins_path%></div>
+  
+app/views/pumpkins/show.html.erb:7
+Started GET "/pumpkins/138" for ::1 at 2020-11-02 17:36:51 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"138"}
+  [1m[36mPumpkin Load (0.5ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 30.0ms | Allocations: 2599)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.5ms | Allocations: 4416)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm' for #<Pumpkin:0x00007fa65c110760>
+Did you mean?  pumpkin_farms
+               pumpkin_farms=):
+    4: 
+    5: <div>Species:<%=@pumpkin.species%></div>
+    6: 
+    7: <div>Availabe at:<%= @pumpkin.pumpkinfarm %></div>
+    8: 
+    9: 
+   10: <div><%=link_to "Back to Index", pumpkins_path%></div>
+  
+app/views/pumpkins/show.html.erb:7
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:37:06 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.5ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 55.4ms | Allocations: 3874)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.5ms | Allocations: 5165)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_id' for #<Pumpkin:0x00007fa6525475b8>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms
+               pumpkin_farms=):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_id, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:39:27 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 3905)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms | Allocations: 5196)
+
+
+  
+ActionView::Template::Error (undefined method `pumpkinfarm_ids' for #<Pumpkin:0x00007fa65c1ba8a0>
+Did you mean?  pumpkin_farm_ids
+               pumpkin_farm_ids=
+               pumpkin_farms):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkinfarm_ids, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:40:00 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.4ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2481)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.4ms | Allocations: 3772)
+
+
+  
+ActionView::Template::Error (Could not find the source association(s) "pumpkin_farm" or :pumpkin_farms in model PumpkinFarmPumpkin. Try 'has_many :pumpkin_farms, :through => :pumpkin_farm_pumpkins, :source => <name>'. Is it one of pumpkin or pumpkinfarm?):
+     6: <%=f.label :species %>
+     7: <%=f.text_field :species %>
+     8: <%=f.label :pumpkin_farm %>
+     9: <%=f.collection_check_boxes :pumpkin_farm_ids, PumpkinFarm.all, :id, :name %>
+    10: 
+    11: <%=f.submit "Submit Your Greek Pumpkin"%>
+    12: <%end%>
+  
+app/views/pumpkins/new.html.erb:9
+app/views/pumpkins/new.html.erb:5
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:40:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (1.0ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 119.3ms | Allocations: 10486)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 168.6ms | ActiveRecord: 7.5ms | Allocations: 18906)
+
+
+Started POST "/pumpkins" for ::1 at 2020-11-02 17:41:39 -0500
+Processing by PumpkinsController#create as HTML
+  Parameters: {"authenticity_token"=>"Lma0oHQ2aZLNsD0VKjgclRsrdsX/GcJIJ3S2vAoRAymE20i8vF55mecrZxGCY1HAMiBKDLWpzy+wZ5qfFzg2xg==", "pumpkin"=>{"species"=>"Virgil", "pumpkin_farm_ids"=>["", "15", "18"]}, "commit"=>"Submit Your Greek Pumpkin"}
+[31mUnpermitted parameter: :pumpkin_farm_ids[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[36mPumpkin Create (5.3ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Virgil"], ["created_at", "2020-11-02 22:41:39.485857"], ["updated_at", "2020-11-02 22:41:39.485857"]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+Redirected to http://localhost:3000/pumpkins/174
+Completed 302 Found in 35ms (ActiveRecord: 8.0ms | Allocations: 3122)
+
+
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:41:39 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.8ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 161ms (Views: 32.8ms | ActiveRecord: 0.8ms | Allocations: 7920)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 17:41:45 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.3ms | Allocations: 6846)
+
+
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:41:46 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 55)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.3ms | Allocations: 4629)
+
+
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:42:36 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.4ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 270)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 62.9ms | ActiveRecord: 0.4ms | Allocations: 5773)
+
+
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:43:08 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.7ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 85.6ms | ActiveRecord: 0.7ms | Allocations: 5762)
+
+
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:43:15 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 4700)
+
+
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:43:33 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.8ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (1.0ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ? LIMIT ?[0m  [["pumpkin_id", 174], ["LIMIT", 11]]
+  ↳ app/views/pumpkins/show.html.erb:7
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 180000.4ms | Allocations: 151986)
+Completed 500 Internal Server Error in 180029ms (ActiveRecord: 1.9ms | Allocations: 200293)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1
+app/views/pumpkins/show.html.erb:7
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:47:08 -0500
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.8ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (2.4ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ?[0m  [["pumpkin_id", 174]]
+  ↳ app/views/pumpkins/show.html.erb:8
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 76.3ms | Allocations: 10500)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 10.1ms | Allocations: 18153)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: pumpkin_farm_pumpkins.pumpkin_farm_id):
+     5: <div>Species:<%=@pumpkin.species%></div>
+     6: 
+     7: <div>
+     8:     Availabe at:<% @pumpkin.pumpkin_farms.each do |farm| %>
+     9:     <ul>
+    10:         <li><%= farm.name %></li>
+    11:     </ul>
+  
+app/views/pumpkins/show.html.erb:8
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenamePumpkinfarmIdToPumpkinFarmId (20201102225034)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apumpkin_farm_pumpkins" ("id" integer NOT NULL PRIMARY KEY, "pumpkin_id" integer DEFAULT NULL, "pumpkin_farm_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "apumpkin_farm_pumpkins" ("id","pumpkin_id","pumpkin_farm_id","created_at","updated_at")
+                     SELECT "id","pumpkin_id","pumpkinfarm_id","created_at","updated_at" FROM "pumpkin_farm_pumpkins"[0m
+  [1m[35m (3.7ms)[0m  [1m[35mDROP TABLE "pumpkin_farm_pumpkins"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pumpkin_farm_pumpkins" ("id" integer NOT NULL PRIMARY KEY, "pumpkin_id" integer DEFAULT NULL, "pumpkin_farm_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("id","pumpkin_id","pumpkin_farm_id","created_at","updated_at")
+                     SELECT "id","pumpkin_id","pumpkin_farm_id","created_at","updated_at" FROM "apumpkin_farm_pumpkins"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "apumpkin_farm_pumpkins"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201102225034"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/pumpkins/174" for ::1 at 2020-11-02 17:54:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"174"}
+  [1m[36mPumpkin Load (0.6ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.8ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ?[0m  [["pumpkin_id", 174]]
+  ↳ app/views/pumpkins/show.html.erb:8
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 19.6ms | Allocations: 5273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 71.4ms | ActiveRecord: 1.4ms | Allocations: 16452)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 17:54:39 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (0.4ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2662)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.4ms | Allocations: 6858)
+
+
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:54:47 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.5ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 496.6ms | Allocations: 203176)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 511ms (Views: 508.0ms | ActiveRecord: 0.5ms | Allocations: 207383)
+
+
+Started POST "/pumpkins" for ::1 at 2020-11-02 17:54:58 -0500
+Processing by PumpkinsController#create as HTML
+  Parameters: {"authenticity_token"=>"BLtdUWXxnzEwPwrsL+aKQ9BSueDkvVbn79CBh5VIClauBqFNrZmPOhqkUOiHvccW+VmFKa4NW4B4w62kiGE/uQ==", "pumpkin"=>{"species"=>"Virgil2", "pumpkin_farm_ids"=>["", "14", "17"]}, "commit"=>"Submit Your Greek Pumpkin"}
+[31mUnpermitted parameter: :pumpkin_farm_ids[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[36mPumpkin Create (0.6ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Virgil2"], ["created_at", "2020-11-02 22:54:58.406093"], ["updated_at", "2020-11-02 22:54:58.406093"]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+Redirected to http://localhost:3000/pumpkins/175
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms | Allocations: 3119)
+
+
+Started GET "/pumpkins/175" for ::1 at 2020-11-02 17:54:58 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"175"}
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 175], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ?[0m  [["pumpkin_id", 175]]
+  ↳ app/views/pumpkins/show.html.erb:8
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 977)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 5563)
+
+
+Started GET "/pumpkins" for ::1 at 2020-11-02 17:55:10 -0500
+Processing by PumpkinsController#index as HTML
+  Rendering pumpkins/index.html.erb within layouts/application
+  [1m[36mPumpkin Load (1.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins"[0m
+  ↳ app/views/pumpkins/index.html.erb:5
+  Rendered pumpkins/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 1.3ms | Allocations: 6579)
+
+
+Started GET "/pumpkins/133" for ::1 at 2020-11-02 17:55:11 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"133"}
+  [1m[36mPumpkin Load (0.3ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 133], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ?[0m  [["pumpkin_id", 133]]
+  ↳ app/views/pumpkins/show.html.erb:8
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 988)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 5567)
+
+
+Started GET "/pumpkins/new" for ::1 at 2020-11-02 17:56:14 -0500
+Processing by PumpkinsController#new as HTML
+  Rendering pumpkins/new.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms"[0m
+  ↳ app/views/pumpkins/new.html.erb:9
+  Rendered pumpkins/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2150)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms | Allocations: 6214)
+
+
+Started POST "/pumpkins" for ::1 at 2020-11-02 17:56:26 -0500
+Processing by PumpkinsController#create as HTML
+  Parameters: {"authenticity_token"=>"cLoSsa8anCNyCq4pMouztkvU0Hxl+9zbX65ReoBjVibaB+6tZ3KMKFiR9C2a0P7jYt/stS9L0bzIvX1ZnUpjyQ==", "pumpkin"=>{"species"=>"Petey", "pumpkin_farm_ids"=>["", "15", "16"]}, "commit"=>"Submit Your Greek Pumpkin"}
+[31mUnpermitted parameter: :pumpkin_farm_ids[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[36mPumpkin Create (1.7ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Petey"], ["created_at", "2020-11-02 22:56:26.476960"], ["updated_at", "2020-11-02 22:56:26.476960"]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+Redirected to http://localhost:3000/pumpkins/176
+Completed 302 Found in 12ms (ActiveRecord: 3.5ms | Allocations: 2813)
+
+
+Started GET "/pumpkins/176" for ::1 at 2020-11-02 17:56:26 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"176"}
+  [1m[36mPumpkin Load (0.5ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 176], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ?[0m  [["pumpkin_id", 176]]
+  ↳ app/views/pumpkins/show.html.erb:8
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 975)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 0.8ms | Allocations: 5547)
+
+
+Started POST "/pumpkins" for ::1 at 2020-11-02 17:57:29 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PumpkinsController#create as HTML
+  Parameters: {"authenticity_token"=>"cLoSsa8anCNyCq4pMouztkvU0Hxl+9zbX65ReoBjVibaB+6tZ3KMKFiR9C2a0P7jYt/stS9L0bzIvX1ZnUpjyQ==", "pumpkin"=>{"species"=>"Anne", "pumpkin_farm_ids"=>["", "15", "16"]}, "commit"=>"Submit Your Greek Pumpkin"}
+  [1m[36mPumpkinFarm Load (1.1ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" WHERE "pumpkin_farms"."id" IN (?, ?)[0m  [["id", 15], ["id", 16]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[36mPumpkin Create (1.2ms)[0m  [1m[32mINSERT INTO "pumpkins" ("species", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["species", "Anne"], ["created_at", "2020-11-02 22:57:30.214144"], ["updated_at", "2020-11-02 22:57:30.214144"]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[36mPumpkinFarmPumpkin Create (0.5ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkin_farm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 177], ["pumpkin_farm_id", 15], ["created_at", "2020-11-02 22:57:30.222750"], ["updated_at", "2020-11-02 22:57:30.222750"]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[36mPumpkinFarmPumpkin Create (0.2ms)[0m  [1m[32mINSERT INTO "pumpkin_farm_pumpkins" ("pumpkin_id", "pumpkin_farm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pumpkin_id", 177], ["pumpkin_farm_id", 16], ["created_at", "2020-11-02 22:57:30.228835"], ["updated_at", "2020-11-02 22:57:30.228835"]]
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pumpkins_controller.rb:15:in `create'
+Redirected to http://localhost:3000/pumpkins/177
+Completed 302 Found in 134ms (ActiveRecord: 11.9ms | Allocations: 21995)
+
+
+Started GET "/pumpkins/177" for ::1 at 2020-11-02 17:57:30 -0500
+Processing by PumpkinsController#show as HTML
+  Parameters: {"id"=>"177"}
+  [1m[36mPumpkin Load (0.5ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" WHERE "pumpkins"."id" = ? LIMIT ?[0m  [["id", 177], ["LIMIT", 1]]
+  ↳ app/controllers/pumpkins_controller.rb:7:in `show'
+  Rendering pumpkins/show.html.erb within layouts/application
+  [1m[36mPumpkinFarm Load (1.0ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkin_farms"."id" = "pumpkin_farm_pumpkins"."pumpkin_farm_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_id" = ?[0m  [["pumpkin_id", 177]]
+  ↳ app/views/pumpkins/show.html.erb:8
+  Rendered pumpkins/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 1.5ms | Allocations: 8129)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPumpkinFarm Load (0.2ms)[0m  [1m[34mSELECT "pumpkin_farms".* FROM "pumpkin_farms" ORDER BY "pumpkin_farms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPumpkin Load (0.2ms)[0m  [1m[34mSELECT "pumpkins".* FROM "pumpkins" INNER JOIN "pumpkin_farm_pumpkins" ON "pumpkins"."id" = "pumpkin_farm_pumpkins"."pumpkin_id" WHERE "pumpkin_farm_pumpkins"."pumpkin_farm_id" = ? LIMIT ?[0m  [["pumpkin_farm_id", 14], ["LIMIT", 11]]
